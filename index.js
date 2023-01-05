@@ -24,10 +24,12 @@ function addToDo() {
     document.querySelector(".deleteButton").addEventListener("click", function () {
         document.querySelector(".item").remove();
     });
+    // Currently doesn't work on multiple list items
 
     document.querySelector(".editButton").addEventListener("click", function () {
         document.querySelector(".input").value = document.querySelector(".item_input").innerText;
         document.querySelector(".item").remove();
     });
+    // Currently doesn't work on multiple list items
 
 }
